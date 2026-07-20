@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aeo-seo.ru/sitemap-index.xml

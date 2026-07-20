@@ -1,0 +1,52 @@
+---
+// LeadForm.astro
+---
+<section id="contact" class="py-section-padding px-margin-mobile md:px-margin-desktop bg-surface max-w-7xl mx-auto my-20">
+  <div class="bg-primary text-on-primary rounded-3xl p-8 md:p-16 relative overflow-hidden shadow-soft-hover border border-primary-container">
+    <!-- Декоративные фоновые элементы -->
+    <div class="absolute -right-32 -top-32 w-96 h-96 bg-primary-container rounded-full blur-[100px]"></div>
+    <div class="absolute -left-32 -bottom-32 w-96 h-96 bg-secondary-container opacity-50 rounded-full blur-[100px]"></div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10">
+      <div>
+        <h2 class="font-display-xl-mobile md:font-headline-lg font-bold mb-6">Готовы обойти конкурентов?</h2>
+        <p class="font-body-lg text-on-primary/90 mb-8 max-w-md">
+          Оставьте заявку, и мы бесплатно проанализируем, как YandexGPT, ChatGPT и поисковики видят ваш бизнес прямо сейчас.
+        </p>
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-12 h-12 rounded-full bg-surface/20 flex items-center justify-center">
+            <span class="material-symbols-outlined">video_camera_front</span>
+          </div>
+          <div>
+            <div class="font-bold">Бесплатный видеоаудит</div>
+            <div class="text-sm text-on-primary/80">Покажем точки роста за 10 минут</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-surface rounded-2xl p-8 text-text-main shadow-lg">
+        <h3 class="font-headline-md text-xl font-bold mb-6">Получить план продвижения</h3>
+        <form class="space-y-4" action="#" method="POST" onsubmit="event.preventDefault(); alert('Спасибо! Заявка отправлена (демо).');">
+          <div>
+            <label class="block font-body-sm text-text-soft mb-1" for="name">Ваше имя</label>
+            <input class="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" type="text" id="name" placeholder="Алексей" required />
+          </div>
+          <div>
+            <label class="block font-body-sm text-text-soft mb-1" for="phone">Номер телефона</label>
+            <input class="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" type="tel" id="phone" placeholder="+7 (999) 000-00-00" required />
+          </div>
+          <div>
+            <label class="block font-body-sm text-text-soft mb-1" for="site">Ссылка на сайт</label>
+            <input class="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" type="url" id="site" placeholder="https://example.com" />
+          </div>
+          <button type="submit" class="w-full bg-primary text-on-primary font-bold font-body-md py-4 rounded-xl hover:bg-primary-container transition-colors shadow-soft mt-4">
+            Запросить аудит
+          </button>
+          <p class="text-xs text-text-soft text-center mt-4">
+            Нажимая на кнопку, вы соглашаетесь с <a href="#" class="text-primary hover:underline">политикой конфиденциальности</a>.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

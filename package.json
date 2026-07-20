@@ -1,11 +1,26 @@
 {
-  "name": "site-starter",
-  "version": "0.1.0",
-  "private": true,
-  "description": "Site starter template with professional design skill",
+  "name": "dark-dwarf",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
-    "dev": "echo 'Run /start or say «Настрой проект» to begin setup'",
-    "build": "echo 'Run /start or say «Настрой проект» to begin setup'",
-    "preview": "echo 'Run /start or say «Настрой проект» to begin setup'"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "deploy": "npm run build && npx surge ./dist aeo-seo.surge.sh"
+  },
+  "dependencies": {
+    "@astrojs/react": "^6.0.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "astro": "^7.1.2",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "tailwindcss": "^4.3.3"
   }
 }
