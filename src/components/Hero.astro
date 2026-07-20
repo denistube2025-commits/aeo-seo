@@ -1,35 +1,43 @@
 ---
-// Hero.astro
 ---
-<section class="pt-32 pb-section-padding md:pt-48 md:pb-section-padding px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto relative overflow-hidden">
-  <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center relative z-10">
-    <div class="lg:col-span-6 reveal active">
-      <div class="inline-flex items-center gap-2 bg-lilac-soft text-on-secondary-container px-3 py-1.5 rounded-full mb-6 font-label-mono text-label-mono uppercase tracking-wider relative ml-[11px] border border-lilac">
-        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-        AEO & SEO Promotion Agency
+<section class="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
+  <div class="container mx-auto px-4 md:px-6 relative z-10 max-w-7xl">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+      
+      <!-- Text Content -->
+      <div class="max-w-2xl">
+        <div class="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-sm font-medium text-primary mb-6">
+          Бесплатный тест-драйв видимости
+        </div>
+        
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-text-main mb-6 leading-[1.1]">
+          Спросите у ChatGPT, кого он посоветует в вашей нише. <span class="text-primary">Скорее всего, он назовёт не вас.</span>
+        </h1>
+        
+        <p class="text-lg md:text-xl text-text-soft mb-8 leading-relaxed">
+          Запишу для вас видео на 12 минут: покажу на экране, что YandexGPT, ChatGPT и Поиск с Нейро отвечают про вашу компанию прямо сейчас, где вас обходят конкуренты и что конкретно чинить в первую очередь. <strong class="text-text-main font-semibold">Без созвона и без презентаций.</strong>
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+          <a href="#lead-form" class="inline-flex justify-center items-center rounded-xl bg-primary px-8 py-4 text-base font-semibold text-white shadow-soft hover:bg-primary-container hover:shadow-soft-hover transition-all duration-300 w-full sm:w-auto text-center group">
+            Получить разбор бесплатно
+            <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </a>
+        </div>
+        
+        <p class="mt-6 text-sm text-text-muted leading-relaxed max-w-lg">
+          Разовый GEO-аудит на рынке стоит от 60 000 ₽. Здесь — бесплатно, потому что это моя визитка, а не благотворительность. Почему именно так — объясняю ниже.
+        </p>
       </div>
-      <h1 class="font-display-xl-mobile text-display-xl-mobile md:font-display-xl md:text-display-xl font-bold text-text-main leading-tight mb-6">
-        Ваши оптовые клиенты уже ищут вас у ИИ-помощников. <span class="text-primary">Нет вас там — заказ уходит конкуренту.</span>
-      </h1>
-      <p class="font-body-lg text-body-lg text-text-soft mb-8 max-w-xl">
-        Выводим сайты в ответы нейросетей (AEO) и в топ поисковиков. Приводим целевые заявки с чеком от 1 млн ₽ для сложных B2B продуктов.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a class="inline-flex justify-center items-center bg-primary text-on-primary font-body-md font-bold rounded-full px-8 py-4 hover:bg-primary-container transition-all shadow-soft hover:shadow-soft-hover hover:-translate-y-0.5" href="#contact">
-          Рассчитать окупаемость
-        </a>
+
+      <!-- Image/Visual -->
+      <div class="relative lg:ml-auto w-full max-w-lg lg:max-w-none">
+        <div class="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-secondary/20 blur-3xl opacity-50 rounded-full z-0"></div>
+        <div class="relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl bg-white/50 backdrop-blur-sm z-10 transform transition-transform hover:scale-[1.02] duration-500">
+          <img src="/hero-chat-ui.png" alt="Пример ответа ChatGPT" class="w-full h-auto object-cover" />
+        </div>
       </div>
+      
     </div>
-    
-    <div class="lg:col-span-6 mt-12 lg:mt-0 reveal active" style="transition-delay: 200ms;">
-      <div class="relative w-full aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden shadow-soft-hover border border-border bg-surface flex items-center justify-center">
-        <img src="/aeo-seo/images/hero.png" alt="AI Search Interface Mockup" class="w-full h-full object-cover" />
-      </div>
-    </div>
-  </div>
-  
-  <!-- Декоративные элементы фона -->
-  <div class="absolute top-0 right-0 -z-10 translate-x-1/3 -translate-y-1/4">
-    <div class="w-[600px] h-[600px] bg-primary/5 rounded-full blur-[80px]"></div>
   </div>
 </section>

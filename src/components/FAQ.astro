@@ -1,46 +1,94 @@
 ---
-// FAQ.astro
 ---
-<section id="faq" class="py-section-padding px-margin-mobile md:px-margin-desktop bg-surface max-w-7xl mx-auto border-t border-border mt-20">
-  <div class="text-center max-w-3xl mx-auto mb-16">
-    <div class="inline-flex items-center gap-2 bg-surface-container text-text-main px-3 py-1.5 rounded-full mb-6 font-label-mono text-label-mono uppercase tracking-wider border border-border">
-      Частые вопросы
+<section class="py-20 md:py-28 bg-surface border-t border-border/40">
+  <div class="container mx-auto px-4 md:px-6 max-w-4xl">
+    
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-text-main">
+        Частые вопросы
+      </h2>
     </div>
-    <h2 class="font-headline-lg text-headline-lg font-bold text-text-main mb-6">FAQ</h2>
-  </div>
 
-  <div class="max-w-3xl mx-auto space-y-4">
-    <!-- Question 1 -->
-    <details class="group bg-background border border-border rounded-2xl p-6 open:bg-surface-container transition-all cursor-pointer">
-      <summary class="font-headline-md text-lg font-bold text-text-main flex justify-between items-center outline-none">
-        В чем отличие AEO от SEO?
-        <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
-      </summary>
-      <p class="font-body-sm text-text-soft mt-4">
-        Классическое SEO нацелено на то, чтобы вывести ваш сайт в поисковой выдаче по ключевым словам. AEO (Answer Engine Optimization) работает с искусственным интеллектом, обучая нейросети (YandexGPT, ChatGPT) понимать ваш бизнес и рекомендовать его напрямую пользователю в режиме диалога.
-      </p>
-    </details>
+    <div class="space-y-4">
+      
+      <!-- FAQ 1 -->
+      <details class="group bg-surface-container-lowest border border-border/50 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex justify-between items-center cursor-pointer p-6 font-bold text-lg text-text-main hover:bg-surface-container-low transition-colors">
+          Что от меня потребуется?
+          <span class="material-symbols-outlined transition-transform duration-300 group-open:-rotate-180 text-primary">expand_more</span>
+        </summary>
+        <div class="px-6 pb-6 text-text-soft leading-relaxed border-t border-border/20 pt-4 mt-2">
+          Только ссылка на сайт. Доступы к Метрике, Вебмастеру или админке не нужны — весь разбор строится на том, что видно снаружи. Если захотите разобрать что-то глубже, доступы обсудим отдельно.
+        </div>
+      </details>
 
-    <!-- Question 2 -->
-    <details class="group bg-background border border-border rounded-2xl p-6 open:bg-surface-container transition-all cursor-pointer">
-      <summary class="font-headline-md text-lg font-bold text-text-main flex justify-between items-center outline-none">
-        Когда будут первые результаты?
-        <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
-      </summary>
-      <p class="font-body-sm text-text-soft mt-4">
-        Обычно мы видим первые упоминания в ответах ИИ уже через 3-4 недели после внедрения микроразметки и структуры сущностей. Классическое SEO начинает приносить стабильный трафик через 2-4 месяца.
-      </p>
-    </details>
+      <!-- FAQ 2 -->
+      <details class="group bg-surface-container-lowest border border-border/50 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex justify-between items-center cursor-pointer p-6 font-bold text-lg text-text-main hover:bg-surface-container-low transition-colors">
+          Сколько ждать видео?
+          <span class="material-symbols-outlined transition-transform duration-300 group-open:-rotate-180 text-primary">expand_more</span>
+        </summary>
+        <div class="px-6 pb-6 text-text-soft leading-relaxed border-t border-border/20 pt-4 mt-2">
+          Два рабочих дня. Если беру в работу дольше — пишу и предупреждаю. Пропасть без ответа не может.
+        </div>
+      </details>
 
-    <!-- Question 3 -->
-    <details class="group bg-background border border-border rounded-2xl p-6 open:bg-surface-container transition-all cursor-pointer">
-      <summary class="font-headline-md text-lg font-bold text-text-main flex justify-between items-center outline-none">
-        Работаете ли вы с нашим штатным программистом?
-        <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
-      </summary>
-      <p class="font-body-sm text-text-soft mt-4">
-        Да, мы можем работать в гибридном формате. Мы составляем подробные технические задания, а ваш программист их внедряет. Если программиста нет — наши специалисты возьмут все технические доработки на себя.
-      </p>
-    </details>
+      <!-- FAQ 3 -->
+      <details class="group bg-surface-container-lowest border border-border/50 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex justify-between items-center cursor-pointer p-6 font-bold text-lg text-text-main hover:bg-surface-container-low transition-colors">
+          Это шаблонное видео, которое рассылают всем?
+          <span class="material-symbols-outlined transition-transform duration-300 group-open:-rotate-180 text-primary">expand_more</span>
+        </summary>
+        <div class="px-6 pb-6 text-text-soft leading-relaxed border-t border-border/20 pt-4 mt-2">
+          Нет. В каждом разборе называю ваш домен, ваши страницы, ваших конкурентов и запросы вашей ниши. Шаблонное видео нельзя записать так, чтобы в нём был скриншот ответа нейросети именно про вашу компанию.
+        </div>
+      </details>
+
+      <!-- FAQ 4 -->
+      <details class="group bg-surface-container-lowest border border-border/50 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex justify-between items-center cursor-pointer p-6 font-bold text-lg text-text-main hover:bg-surface-container-low transition-colors">
+          Мне будут потом звонить и продавать?
+          <span class="material-symbols-outlined transition-transform duration-300 group-open:-rotate-180 text-primary">expand_more</span>
+        </summary>
+        <div class="px-6 pb-6 text-text-soft leading-relaxed border-t border-border/20 pt-4 mt-2">
+          Нет. После отправки видео я пишу один раз в мессенджер и спрашиваю, всё ли понятно. Если не отвечаете — на этом всё.
+        </div>
+      </details>
+
+      <!-- FAQ 5 -->
+      <details class="group bg-surface-container-lowest border border-border/50 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex justify-between items-center cursor-pointer p-6 font-bold text-lg text-text-main hover:bg-surface-container-low transition-colors">
+          У нас уже есть SEO-подрядчик. Есть смысл?
+          <span class="material-symbols-outlined transition-transform duration-300 group-open:-rotate-180 text-primary">expand_more</span>
+        </summary>
+        <div class="px-6 pb-6 text-text-soft leading-relaxed border-t border-border/20 pt-4 mt-2">
+          Да, и часто это самый полезный сценарий. Разбор покажет, закрыт ли у вас слой ИИ-ответов — это отдельная работа, которую классический SEO-подрядчик обычно не ведёт. Можете использовать видео как список вопросов к своей команде. Я не занимаюсь тем, чтобы уводить клиентов у коллег.
+        </div>
+      </details>
+
+      <!-- FAQ 6 -->
+      <details class="group bg-surface-container-lowest border border-border/50 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex justify-between items-center cursor-pointer p-6 font-bold text-lg text-text-main hover:bg-surface-container-low transition-colors">
+          Чем AEO отличается от SEO простыми словами?
+          <span class="material-symbols-outlined transition-transform duration-300 group-open:-rotate-180 text-primary">expand_more</span>
+        </summary>
+        <div class="px-6 pb-6 text-text-soft leading-relaxed border-t border-border/20 pt-4 mt-2">
+          SEO выводит сайт в список ссылок. AEO делает так, чтобы нейросеть назвала вашу компанию в ответе, когда клиент просит посоветовать поставщика. Первое даёт переходы, второе даёт рекомендацию. Сейчас работает только связка.
+        </div>
+      </details>
+
+      <!-- FAQ 7 -->
+      <details class="group bg-surface-container-lowest border border-border/50 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex justify-between items-center cursor-pointer p-6 font-bold text-lg text-text-main hover:bg-surface-container-low transition-colors">
+          Сколько стоит работа, если мы захотим продолжить?
+          <span class="material-symbols-outlined transition-transform duration-300 group-open:-rotate-180 text-primary">expand_more</span>
+        </summary>
+        <div class="px-6 pb-6 text-text-soft leading-relaxed border-t border-border/20 pt-4 mt-2">
+          Скажу прямо, чтобы не тратить ваше время: работа по AEO и SEO в моём агентстве — от 150 000 ₽ в месяц, договор от 6 месяцев. Разбор бесплатный и ни к чему не обязывает, но если этот бюджет для вас нереален, лучше сразу знать.
+        </div>
+      </details>
+
+    </div>
+
   </div>
 </section>
