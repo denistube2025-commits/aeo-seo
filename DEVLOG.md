@@ -34,6 +34,7 @@
 
 ## Записи
 
+- [2026-10-06] Домен сайта изменён с `aeo-seo.ru` на `seotopia.ru`: `astro.config.mjs` (site), `public/robots.txt` (ссылка на sitemap). (Claude Code)
 - [2026-07-20] Сверстаны все секции лендинга: `Problem.astro`, `Services.astro`, `Benefits.astro`, `Process.astro`, `Cases.astro`, `FAQ.astro`, `LeadForm.astro`. Сгенерированы и добавлены локальные изображения для Hero и Cases. Страница `index.astro` собрана полностью. Проект успешно собирается. (Antigravity)
 - [2026-07-20] Созданы базовые компоненты лендинга: `Header` (стеклянная навигация), `Hero` (главный экран с оффером AEO & SEO), `Footer`. (Antigravity)
 - [2026-07-20] Инициализация проекта: Astro + React + TailwindCSS. Настройка глобальных дизайн-токенов (Stitch Corporate AI theme) и базового SEO. Бриф сохранён. (Antigravity)

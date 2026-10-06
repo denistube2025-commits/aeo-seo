@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aeo-seo.ru/sitemap-index.xml
+Sitemap: https://seotopia.ru/sitemap-index.xml
